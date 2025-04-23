@@ -1,4 +1,3 @@
-
 export interface MenuItem {
   id: number;
   name: string;
@@ -14,196 +13,199 @@ export type MenuCategory = {
 };
 
 export const menuCategories: MenuCategory[] = [
-  { id: "indian", name: "Indian" },
-  { id: "chinese", name: "Chinese" },
-  { id: "continental", name: "Continental" },
+  { id: "starters", name: "Starters" },
+  { id: "indian", name: "Indian Main Course" },
+  { id: "chinese", name: "Chinese Main Course" },
+  { id: "continental", name: "Continental Main Course" },
   { id: "beverages", name: "Beverages" },
   { id: "desserts", name: "Desserts" },
 ];
 
 export const menuItems: MenuItem[] = [
-  // Indian
+  // Starters
   {
     id: 1,
-    name: "Butter Chicken",
-    category: "indian",
-    description: "Tender chicken in a rich buttery tomato sauce",
-    price: 350,
+    name: "Vegetable Spring Rolls",
+    category: "starters",
+    description: "Crispy rolls filled with mixed vegetables",
+    price: 180,
   },
   {
     id: 2,
-    name: "Paneer Tikka Masala",
-    category: "indian",
-    description: "Grilled cottage cheese in a spicy tomato gravy",
-    price: 280,
+    name: "Paneer Tikka",
+    category: "starters",
+    description: "Grilled cottage cheese marinated in spices",
+    price: 220,
   },
   {
     id: 3,
+    name: "Chicken Wings",
+    category: "starters",
+    description: "Crispy fried chicken wings with hot sauce",
+    price: 280,
+  },
+  {
+    id: 4,
+    name: "Mushroom Bruschetta",
+    category: "starters",
+    description: "Toasted bread with sautéed mushrooms and herbs",
+    price: 200,
+  },
+
+  // Indian Main Course
+  {
+    id: 5,
+    name: "Butter Chicken",
+    category: "indian",
+    description: "Tender chicken in rich buttery tomato sauce",
+    price: 350,
+  },
+  {
+    id: 6,
+    name: "Paneer Butter Masala",
+    category: "indian",
+    description: "Cottage cheese in creamy tomato gravy",
+    price: 280,
+  },
+  {
+    id: 7,
     name: "Dal Makhani",
     category: "indian",
     description: "Black lentils cooked with butter and cream",
     price: 220,
   },
   {
-    id: 4,
+    id: 8,
+    name: "Vegetable Biryani",
+    category: "indian",
+    description: "Fragrant rice with mixed vegetables and spices",
+    price: 250,
+  },
+  {
+    id: 9,
     name: "Naan",
     category: "indian",
-    description: "Traditional Indian bread baked in tandoor",
+    description: "Traditional Indian bread",
     price: 60,
   },
+
+  // Chinese Main Course
   {
-    id: 5,
-    name: "Biryani",
-    category: "indian",
-    description: "Fragrant rice dish with spices and meat or vegetables",
-    price: 320,
-  },
-  
-  // Chinese
-  {
-    id: 6,
-    name: "Kung Pao Chicken",
-    category: "chinese",
-    description: "Spicy stir-fried chicken with peanuts and vegetables",
-    price: 290,
-  },
-  {
-    id: 7,
+    id: 10,
     name: "Vegetable Hakka Noodles",
     category: "chinese",
     description: "Stir-fried noodles with mixed vegetables",
     price: 210,
   },
   {
-    id: 8,
-    name: "Sweet and Sour Pork",
-    category: "chinese",
-    description: "Crispy pork pieces with a tangy sweet and sour sauce",
-    price: 320,
-  },
-  {
-    id: 9,
-    name: "Veg Spring Rolls",
-    category: "chinese",
-    description: "Crispy fried rolls with vegetable filling",
-    price: 180,
-  },
-  {
-    id: 10,
-    name: "Fried Rice",
-    category: "chinese",
-    description: "Stir-fried rice with eggs and vegetables",
-    price: 220,
-  },
-  
-  // Continental
-  {
     id: 11,
-    name: "Classic Margherita Pizza",
-    category: "continental",
-    description: "Tomato, mozzarella, and basil on a thin crust",
-    price: 300,
+    name: "Sweet and Sour Vegetables",
+    category: "chinese",
+    description: "Crispy vegetables in tangy sauce",
+    price: 240,
   },
   {
     id: 12,
-    name: "Spaghetti Carbonara",
-    category: "continental",
-    description: "Pasta with creamy egg sauce, pancetta, and black pepper",
-    price: 320,
+    name: "Manchurian Fried Rice",
+    category: "chinese",
+    description: "Fried rice with vegetable balls in spicy sauce",
+    price: 230,
   },
   {
     id: 13,
-    name: "Grilled Salmon",
-    category: "continental",
-    description: "Fresh salmon fillet with herbs and lemon",
-    price: 420,
+    name: "Szechuan Tofu",
+    category: "chinese",
+    description: "Tofu in spicy Szechuan sauce",
+    price: 260,
   },
+
+  // Continental Main Course
   {
     id: 14,
-    name: "Caesar Salad",
+    name: "Margherita Pizza",
     category: "continental",
-    description: "Romaine lettuce with Caesar dressing, croutons, and parmesan",
-    price: 250,
+    description: "Classic pizza with tomato and mozzarella",
+    price: 300,
   },
   {
     id: 15,
-    name: "Mushroom Risotto",
+    name: "Pasta Alfredo",
     category: "continental",
-    description: "Creamy Italian rice dish with mushrooms and parmesan",
+    description: "Creamy pasta with parmesan sauce",
     price: 280,
   },
-  
-  // Beverages
   {
     id: 16,
-    name: "Fresh Lime Soda",
-    category: "beverages",
-    description: "Refreshing lime juice with soda water",
-    price: 80,
-  },
-  {
-    id: 17,
-    name: "Masala Chai",
-    category: "beverages",
-    description: "Spiced Indian tea with milk",
-    price: 60,
-  },
-  {
-    id: 18,
-    name: "Classic Mojito",
-    category: "beverages",
-    description: "Refreshing mint and lime mocktail",
-    price: 150,
-  },
-  {
-    id: 19,
-    name: "Mango Smoothie",
-    category: "beverages",
-    description: "Thick smoothie made with fresh mangoes and yogurt",
-    price: 140,
-  },
-  {
-    id: 20,
-    name: "Fresh Orange Juice",
-    category: "beverages",
-    description: "Freshly squeezed orange juice",
-    price: 120,
-  },
-  
-  // Desserts
-  {
-    id: 21,
-    name: "Gulab Jamun",
-    category: "desserts",
-    description: "Deep-fried milk solids soaked in sugar syrup",
-    price: 140,
-  },
-  {
-    id: 22,
-    name: "Chocolate Brownie with Ice Cream",
-    category: "desserts",
-    description: "Warm chocolate brownie served with vanilla ice cream",
-    price: 180,
-  },
-  {
-    id: 23,
-    name: "Tiramisu",
-    category: "desserts",
-    description: "Italian coffee-flavored dessert with mascarpone cheese",
+    name: "Grilled Vegetable Sandwich",
+    category: "continental",
+    description: "Toasted sandwich with grilled vegetables",
     price: 220,
   },
   {
-    id: 24,
-    name: "Cheesecake",
+    id: 17,
+    name: "Caesar Salad",
+    category: "continental",
+    description: "Fresh lettuce with Caesar dressing",
+    price: 250,
+  },
+
+  // Beverages
+  {
+    id: 18,
+    name: "Fresh Lime Soda",
+    category: "beverages",
+    description: "Refreshing lime juice with soda",
+    price: 80,
+  },
+  {
+    id: 19,
+    name: "Masala Chai",
+    category: "beverages",
+    description: "Spiced Indian tea",
+    price: 60,
+  },
+  {
+    id: 20,
+    name: "Mango Smoothie",
+    category: "beverages",
+    description: "Thick mango smoothie with yogurt",
+    price: 140,
+  },
+  {
+    id: 21,
+    name: "Iced Coffee",
+    category: "beverages",
+    description: "Chilled coffee with milk",
+    price: 120,
+  },
+
+  // Desserts
+  {
+    id: 22,
+    name: "Gulab Jamun",
     category: "desserts",
-    description: "New York style cheesecake with berry compote",
-    price: 190,
+    description: "Sweet milk balls in sugar syrup",
+    price: 140,
+  },
+  {
+    id: 23,
+    name: "Chocolate Brownie",
+    category: "desserts",
+    description: "Warm chocolate brownie with ice cream",
+    price: 180,
+  },
+  {
+    id: 24,
+    name: "Tiramisu",
+    category: "desserts",
+    description: "Italian coffee-flavored dessert",
+    price: 220,
   },
   {
     id: 25,
-    name: "Rasmalai",
+    name: "Fruit Custard",
     category: "desserts",
-    description: "Soft cottage cheese dumplings in sweetened milk",
+    description: "Mixed fruits in vanilla custard",
     price: 160,
   },
 ];

@@ -1,6 +1,6 @@
-
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { MenuItem, menuItems } from "@/data/menuData";
+import { mockTableOrders, mockBillHistory } from "@/data/mockOrders";
 import { toast } from "sonner";
 
 export interface TableOrder {
@@ -54,9 +54,9 @@ export const useRestaurant = () => {
 export const TAX_RATE = 0.05; // 5% tax
 
 export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [tables, setTables] = useState<TableOrder[]>([]);
+  const [tables, setTables] = useState<TableOrder[]>(mockTableOrders);
   const [activeTableId, setActiveTableId] = useState<number | null>(null);
-  const [billHistory, setBillHistory] = useState<BillHistory[]>([]);
+  const [billHistory, setBillHistory] = useState<BillHistory[]>(mockBillHistory);
   
   // Load state from localStorage on mount
   useEffect(() => {
